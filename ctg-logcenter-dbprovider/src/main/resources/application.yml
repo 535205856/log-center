@@ -1,0 +1,29 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: db-provider
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:mysql://10.66.6.25/ctg_logcenter?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: Asdf@1324
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+      mapper-locations: classpath:mapping/*.xml
+      type-aliases-package: com.nypass.search
+remote:
+  server:
+    name: db-provider
+
+access:
+  key: fuaJUwsE69mccrCl
+  secret: evQeAcSH8jm2UysqVNbsNvDEG4a0C8
+registry: http://10.66.6.17
+logging:
+  level:
+    com:
+      ctg:
+        user: debug

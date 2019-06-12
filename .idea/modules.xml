@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ctg-bizcenter-logcenter.iml" filepath="$PROJECT_DIR$/ctg-bizcenter-logcenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ctg-logcenter-dbprovider/ctg-logcenter-dbprovider.iml" filepath="$PROJECT_DIR$/ctg-logcenter-dbprovider/ctg-logcenter-dbprovider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ctg-logcenter-escomponent/ctg-logcenter-escomponent.iml" filepath="$PROJECT_DIR$/ctg-logcenter-escomponent/ctg-logcenter-escomponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ctg-logcenter-service-api/ctg-logcenter-service-api.iml" filepath="$PROJECT_DIR$/ctg-logcenter-service-api/ctg-logcenter-service-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ctg-logcenter-service-consumer/ctg-logcenter-service-consumer.iml" filepath="$PROJECT_DIR$/ctg-logcenter-service-consumer/ctg-logcenter-service-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ctg-logcenter-service-provider/ctg-logcenter-service-provider.iml" filepath="$PROJECT_DIR$/ctg-logcenter-service-provider/ctg-logcenter-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ctg-logcenter-util/ctg-logcenter-util.iml" filepath="$PROJECT_DIR$/ctg-logcenter-util/ctg-logcenter-util.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.nypaas</groupId>
+	<artifactId>ctg-bizcenter-logcenter</artifactId>
+	<version>1.0.0.RELEASE</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>ctg-logcenter-escomponent</module>
+		<module>ctg-logcenter-util</module>
+		<module>ctg-logcenter-service-api</module>
+		<module>ctg-logcenter-service-consumer</module>
+		<module>ctg-logcenter-service-provider</module>
+        <module>ctg-logcenter-dbprovider</module>
+    </modules>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.4.RELEASE</version>
+        <!--<version>2.1.2.RELEASE</version>-->
+        <relativePath/>
+    </parent>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.yonyou.cloud.middleware</groupId>
+			<artifactId>iris-springboot-support</artifactId>
+			<version>${mw.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.yonyou.cloud.middleware</groupId>
+			<artifactId>middleware</artifactId>
+			<version>${mw.version}</version>
+		</dependency>
+
+		<!--<dependency>-->
+			<!--<groupId>org.elasticsearch.plugin</groupId>-->
+			<!--<artifactId>transport-netty4-client</artifactId>-->
+            <!--<version>${es.version}</version>-->
+		<!--</dependency>-->
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.7.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>2.10.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.51</version>
+		</dependency>
+	</dependencies>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<mw.version>5.0.0-RELEASE</mw.version>
+		<!--<mw.version>5.1.1-RELEASE</mw.version>-->
+		<es.version>6.5.4</es.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>YonyouCloud-Snapshot</id>
+			<name>YonyouCloud-Snapshot</name>
+			<url>http://10.66.6.25:8081/repository/3rd-party-yonyou/</url>
+		</repository>
+	</repositories>
+</project>

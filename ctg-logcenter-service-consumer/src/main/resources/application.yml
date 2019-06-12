@@ -1,0 +1,17 @@
+server: 
+  port: 20002
+spring: 
+  application: 
+    name: ctg-logcenter-service-consumer
+  profiles: 
+    active: test
+remote:
+  server:
+    name: ctg-logcenter-service-consumer
+#client:
+ # usemock: false
+
+access:
+  key: fuaJUwsE69mccrCl
+  secret: evQeAcSH8jm2UysqVNbsNvDEG4a0C8
+registry: http://10.66.6.17

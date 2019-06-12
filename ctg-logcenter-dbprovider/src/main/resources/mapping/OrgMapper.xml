@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.nypass.search.mapper.OrgMapper">
+    <resultMap id="BaseResultMap" type="com.nypass.search.enty.OrgEnty" >
+        <id column="orgid" property="orgid" jdbcType="VARCHAR" />
+        <result column="orgname" property="orgname" jdbcType="VARCHAR" />
+        <result column="partendid" property="partendid" jdbcType="VARCHAR" />
+    </resultMap>
+
+
+    <select id="findOrg" resultMap="BaseResultMap" >
+       select * from ctg_docker_org
+    </select>
+</mapper>

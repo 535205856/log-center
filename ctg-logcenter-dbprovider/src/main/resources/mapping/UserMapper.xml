@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.nypass.search.mapper.UserMapper" >
+    <resultMap id="BaseResultMap" type="com.nypass.search.enty.UserEnty" >
+        <id column="userid" property="id" jdbcType="VARCHAR" />
+        <result column="username" property="userName" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <select id="findUserByNames" resultMap="BaseResultMap" parameterType="java.util.Map" >
+        select * from ctg_docker_user where  username in
+        <foreach collection="usernames" item="key"  open="(" close=")" separator="," >
+            #{key}
+        </foreach>
+    </select>
+
+    <select id="findUserByName" resultMap="BaseResultMap"  >
+       select * from ctg_docker_user where username = #{username}
+--     select * from ctg_docker_user where username in(${_parameter})"  动态参数 传入一个以逗号分隔的字符串
+    </select>
+    <select id="findUser" resultMap="BaseResultMap" >
+       select * from ctg_docker_user
+    </select>
+</mapper>
